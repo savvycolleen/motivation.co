@@ -7,22 +7,19 @@ export default function NavLinks() {
   const pathname = usePathname()
  
   return (
-    <nav>
-      <ul className="flex flex-row gap-5">
-        <li>
-          <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
-          Home</Link>
-        </li>
-        <li>
-          <Link className={`link ${pathname === '/explore' ? 'active' : ''}`}
-          href="/explore">Explore</Link>
-        </li>
-        <li>
-          <Link className={`link ${pathname === '/about' ? 'active' : ''}`}
-          href="/about">About</Link>
-        </li>
-      </ul>
-
-    </nav>
+    <ul className='w-1/2 md:w-full text-center md:flex'>
+      <li>
+        <Link className={`link ${pathname === '/' ? 'bg-pink' : ''} bg-black text-white hover:bg-yellow hover:text-black block py-3 px-5`} href="/">
+        Home</Link>
+      </li>
+      <li>
+        <Link className={`link ${pathname === '/explore' ? 'bg-pink' : ''} bg-black text-white hover:bg-yellow hover:text-black block py-3 px-5`}
+        href="/explore">Explore</Link>      
+      </li>
+      <li>
+        <Link className={`link ${pathname === '/about' ? 'bg-pink' : ''} bg-black text-white hover:bg-yellow hover:text-black block py-3 px-5`}
+        href="/about">About</Link>
+      </li>
+    </ul>
   )
 }

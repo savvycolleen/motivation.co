@@ -2,11 +2,13 @@ import NavLinks from "./Navlinks"
 
 export default function Header(){
   return(
-    <header className="px-4 py-3">
-      <nav className="flex flex-row gap-2 justify-between">
-        <span>motivation.co</span>
+    <header className="flex flex-col md:flex-row md:justify-between">
+      <div className="p-3">
+        <p className="italic">motivation.co</p>
+      </div>
+      <div className="bg-white flex items-center justify-center md:flex-row md:pr-3 md:align-middle">
         <NavLinks />
-      </nav>
+      </div>
     </header>
   )
 }
