@@ -1,24 +1,22 @@
 import Image from "next/image"
-import hero from "../../public/hero.png"
+import shapes from "../../public/shapes.svg"
 
 
 export default function Hero(){
   return (
-    <div className="container w-100%">
-      <div>
-        <Image 
-        alt="hero design"
-        src={hero}
-        />
-      </div>
-      <div className="overflow-visible">
-        <h1 className="
-        text-8xl underline decoration-pink 
-        decoration-wavy underline-offset-8 decoration-10">
-        motivation.co</h1>
-      </div>
-      
-    </div>
-    
+    <section>
+      <div className="hero mt-3 h-[65vh] relative isolate">
+          <Image 
+            src= {shapes}
+            alt="shapes background"
+            width={750}
+            height={500}
+            className="h-[65vh] object-cover object-left-top absolute"
+            />
+          <h1 className="w-fit underline decoration-blue text-5xl
+            decoration-wavy underline-offset-8 decoration-10 z-10 absolute ms-[2rem] mt-[10rem]">
+           motivation.co</h1>
+      </div>      
+    </section>
   )
 }

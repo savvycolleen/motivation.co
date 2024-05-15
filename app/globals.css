@@ -10,16 +10,6 @@
   --yellow: #D6F059;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --white: #ffffff;
-    --black: #000000;
-    --blue: #8BC2F9;
-    --pink: #EA98E3;
-    --yellow: #D6F059;
-  }
-}
-
 @layer base {
   h1 {
     @apply text-2xl;
@@ -37,3 +27,4 @@
     @apply text-base
   }
 }
+
